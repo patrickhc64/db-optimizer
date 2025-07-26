@@ -46,6 +46,14 @@ header {
     font-size: 0.9rem;
 }
 
+.query-item {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 .query-id {
     background: #e3f2fd;
     padding: 3px 8px;
@@ -75,6 +83,14 @@ header {
 
 .query-actions button:hover {
     transform: translateY(-2px);
+}
+
+.optimize-btn, .explain-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .optimize-btn {

@@ -36,6 +36,10 @@ if ($id > 0) {
             $suggestion = "Leading wildcards in LIKE queries prevent index usage - consider full-text search alternatives";
             $severity = "high";
         }
+        elseif (stripos($query, "SELECT id, name") !== false) {
+            $suggestion = "Consider adding an index on the 'status' column to optimize this query";
+            $severity = "medium";
+        }
     }
     $stmt->close();
 }

@@ -7,7 +7,8 @@ CREATE TABLE performance_log (
     execution_time FLOAT NOT NULL
 );
 
-INSERT INTO performance_log (query_text, execution_time) VALUES
+INSERT INTO performance_log (query_text, execution_time)VALUES
 ('SELECT * FROM users WHERE email="test@example.com"', 0.85),
 ('SELECT * FROM orders WHERE user_id IN (SELECT id FROM users WHERE status=1)', 1.23),
-('SELECT COUNT(*) FROM products', 0.42);
+('SELECT COUNT(*) FROM products', 0.42),
+('SELECT id, name FROM users WHERE status=1', 0.55);
