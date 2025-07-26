@@ -1,5 +1,0 @@
-<?php
-// optimize.php
-$suggestions = ["ADD INDEX (email)", "OPTIMIZE TABLE users"];
-header('Content-Type: application/json');
-echo json_encode(['index' => $suggestions[rand(0,1)]]);
